@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+
+.container {
+    max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ==== HERO ==== */
+.hero {
+    background: url("../img/main-banner.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(187 218 252 / 14%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.here-main-title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 1.2;
+    color: #252B42;
+}
+
+.lead {
+    color: #737373;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub-title p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #737373;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #252B42 !important;
+}
+
+/* ==== ADVANTAGES ==== */
+.advantages-section {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 8px 15px 0 #0000000D;
+}
+
+
+.service-img img {
+    width: 48px;
+    height: 48px;
+    margin-top: -4px;
+}
+
+.service-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.main-title h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252B42;
+}
+
+.border-right-short {
+    position: relative;
+}
+
+.border-right-short::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 120px;
+    border-right: 2px solid #bdbdbd70;
+}
+
+
+.work-item h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    vertical-align: bottom;
+    color: #737373;
+    margin-bottom: 0;
+}
+
+.work-item h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    text-align: left;
+}
+
+.work-item p {
+    font-weight: 500;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    margin-bottom: 0;
+    color: #737373;
+}
+
+.work-item ul li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #737373;
+}
+
+
+.service-text {
+    color: #737373;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 16px;
+}
+
+/* ==== SERVICES SECTION ==== */
+#services {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+
+/* ==== FOOTER ==== */
+footer {
+    background: #2878a7;
+    color: #fff;
+}
+
+#how-work .work-div {
+    --bs-gutter-y: 3rem;
+    --bs-gutter-x: 3rem;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 991px) {
+
+    #how-work .work-div {
+        --bs-gutter-y: 0;
+        --bs-gutter-x: 0;
+    }
+
+    .here-main-title {
+        font-size: 38px;
+    }
+
+    .lead {
+        font-size: 16px;
+        text-align: left;
+        width: 100% !important;
+    }
+
+    .advantages-section {
+        position: static;
+        transform: none;
+        margin-top: -40px;
+    }
+
+    .margin-container-20 {
+        margin: 0 5%;
+    }
+
+    #services {
+        padding-top: 60px;
+    }
+
+    .navbar-nav {
+        background: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        margin: 6px 0;
+        display: inline-block;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .navbar-brand img {
+        height: 28px;
+    }
+
+    .service-box {
+        padding: 16px;
+    }
+
+    .service-title {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .service-text {
+        font-size: 14px;
+    }
+
+    .border-right-short::after {
+        display: none; /* 🔹 убираем разделители для мобильных */
+    }
+
+    .advantages-section {
+        margin-top: 0;
+    }
+
+    .big-svg {
+        width: 120px;
+        height: 60px;
+    }
+
+
+}
+
+b {
+    font-weight: 600;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.big-svg {
+    width: 158px;
+    height: 80px;
+}
+
+.advantage h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.advantage {
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.advantage p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.bg-light {
+    background: #F3F3F3 !important;
+}
+
+.bg-white {
+    background: #FAFAFA !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(270deg, #FBE7F3 -1.04%, #E6EDF3 100%) !important;
+}
+
+.accordion-header {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff;
+
+}
+
+.accordion-header:hover {
+    background-color: #ffffffcf;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    background: #ffffff;
+}
+
+.accordion-content.show {
+    opacity: 1;
+}
+
+.accordion-content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-left: 15px;
+    color: #737373;
+    margin-bottom: 5px;
+}
+
+.accordion-icon {
+    font-size: 40px;
+    font-weight: 100;
+    transition: transform 0.3s ease, color 0.3s ease;
+    /*font-weight: bold;*/
+}
+
+.accordion-icon.open {
+    transform: rotate(180deg);
+    color: #007bff;
+}
+
+.accordion-title {
+    font-weight: 700;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+#sponsor {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#contacts h5 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #fff;
+    text-align: left;
+}
+
+#contacts ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#contacts .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#contacts .nav-link:hover, .nav-link.active {
+    color: #252B42 !important;
+}
+
+#contacts .list-unstyled img {
+    margin-right: 10px;
+}
