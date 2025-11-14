@@ -896,7 +896,7 @@ footer img {
 /* Иконки справа */
 .service-icons {
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 44px;
     opacity: 0.08;
     display: flex;
