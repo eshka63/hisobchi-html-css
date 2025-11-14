@@ -37,11 +37,109 @@ body {
     z-index: 2;
 }
 
+
+.about-hero {
+    background: url("../img/about-banner.png") center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-hero {
+    background: url("../img/service-banner.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner-background {
+    background-color: #00000080;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.here-main-wh-title {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-banner-background .sub-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center; /* 🟢 выравниваем по центру */
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    position: relative;
+}
+
+/* 📱 Адаптивность */
+@media (max-width: 992px) {
+    .here-main-wh-title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .hero-banner-background .sub-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .here-main-wh-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+
 .here-main-title {
     font-weight: 800;
     font-size: 58px;
     line-height: 1.2;
     color: #252B42;
+}
+
+.here-main-wh-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.hero-banner-background .sub-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    color: #fff;
+    max-width: 1200px
 }
 
 .lead {
@@ -56,8 +154,12 @@ body {
     background-color: transparent;
 }
 
+.navbar-bg-white {
+    background-color: #fff;
+}
+
 .navbar.scrolled {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -183,6 +285,20 @@ body {
 #services {
     padding-top: 160px;
     padding-bottom: 80px;
+}
+
+.second-sections {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.second-sections .sub-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 
@@ -427,4 +543,375 @@ b {
 
 #contacts .list-unstyled img {
     margin-right: 10px;
+}
+
+
+/* Общий контейнер */
+.team-section {
+    padding: 40px 0;
+}
+
+/* Сетка */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Карточка */
+.team-card {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transition: transform .2s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Верхняя часть карточки */
+.team-card-top {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Аватар */
+.avatar {
+    background-image: url("../img/svg/Frame-15.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+/* Нижняя часть карточки */
+.team-card-bottom {
+    padding: 20px;
+    text-align: left;
+}
+
+.team-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0 0 6px;
+    color: #1b1c1e;
+}
+
+.team-position {
+    font-size: 14px;
+    color: #5e6065;
+    margin: 0;
+}
+
+/* 📱 Адаптивность */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .team-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
+.stats-section {
+    background: #1f6d97;
+    padding: 70px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.stats-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Сетка */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1060px;
+    margin: 0 auto;
+    place-items: center;
+}
+
+/* Карточка */
+.stat-card {
+    background: #e8edf7;
+    width: 330px;
+    height: 233px;
+    padding: 30px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.stat-icon {
+    width: 50px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #163047;
+    margin: 0;
+}
+
+.stat-text {
+    font-size: 14px;
+    color: #505a65;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* 📱 Адаптивность */
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stat-card {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    /*background: #f5f7fa;*/
+    text-align: center;
+}
+
+footer .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .d-flex > div {
+    min-width: 220px;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer img {
+    margin-right: 8px;
+}
+
+/*  Планшеты (2 колонки) */
+@media (max-width: 992px) {
+    footer .d-flex {
+        gap: 30px;
+    }
+
+    footer .d-flex > div {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+
+@media (max-width: 576px) {
+    footer .d-flex > div {
+        flex: 0 0 100%;
+        text-align: left;
+    }
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.way-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 🔥 центрируем картинку по высоте текста */
+    gap: 40px; /* расстояние между текстом и картинкой */
+}
+
+/* Заголовок */
+.way-div h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 35px;
+}
+
+/* Текст */
+.way-div p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /*text-align: justify;*/
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 0;
+}
+
+
+/* ========================== */
+/*  Адаптивность */
+/* ========================== */
+
+@media (max-width: 992px) {
+    .way-div {
+        flex-direction: column; /*  На планшетах — колонка */
+        text-align: center;
+    }
+
+    .way-div h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .way-div p {
+        text-align: center;
+    }
+
+    .way-div .w-25,
+    .way-div .w-75 {
+        width: 100% !important; /* Колонки становятся 100% шириной */
+    }
+
+    .way-div img {
+        margin-bottom: 25px; /* расстояние от картинки */
+    }
+}
+
+.service-block.closed .service-content.preview {
+    max-height: 85px; /* превью высота */
+    transition: max-height 0.35s ease;
+}
+
+/* Блоки */
+.service-block {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: padding 0.35s ease, background 0.3s ease;
+}
+
+/* закрытый — полупрозрачный фон */
+.service-block.closed {
+    /*background: rgba(255, 255, 255, 0.15) !important;*/
+}
+
+.service-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+}
+
+/* Контент */
+.service-content ul {
+    padding-left: 25px;
+}
+
+.service-content ul li {
+    font-weight: 500;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    color: #737373;
+
+}
+
+/* --- PREVIEW СОСТОЯНИЕ --- */
+.service-content.preview {
+    max-height: 85px; /* показываем только 3–4 пункта */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Прозрачный верхний градиент */
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, .85) 100%
+    );
+    pointer-events: none;
+}
+
+/* Открытый блок */
+.service-block.open .service-content.preview {
+    max-height: 1000px; /* достаточно большое значение */
+}
+
+.service-block.open {
+    padding: 25px 30px; /* полный padding */
+}
+
+.service-block.open .fade-overlay {
+    display: none;
+}
+
+/* Иконки справа */
+.service-icons {
+    position: absolute;
+    right: 20px;
+    top: 44px;
+    opacity: 0.08;
+    display: flex;
+    gap: 30px;
+}
+
+
+.service-block.closed {
+    padding: 25px 20px 0 30px !important;
+}
+
+.service-header h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
 }
