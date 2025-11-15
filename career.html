@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Hisobchi</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="./css/aos.css" rel="stylesheet"/>
+    <script src="./js/aos.js"></script>
+
+</head>
+
+<body>
+<!-- ======= Navbar ======= -->
+<nav class="navbar navbar-expand-lg navbar-bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="#">
+            <img src="img/logo.svg" class="big-svg" alt="Logo"/>
+        </a>
+        <div class="navbar-toggler border-0"  data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <img src="img/svg/icn-menu.svg" class="plus-svg" alt="plus icon"/>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end align-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="nav-link active" href="#home">Kompaniya haqida</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Xizmatlar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Narxlar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Mijozlar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Karera</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Kontaktlar</a></li>
+
+                <!-- Dropdown язык -->
+                <li class="nav-item dropdown language-dropdown">
+                    <div class="lang-toggle">
+                        <img src="img/svg/uzb.svg" class="lang-flag" alt="">
+                        <span>O‘z</span>
+                    </div>
+
+                    <div class="lang-menu">
+                        <div class="lang-option">
+                            <img src="img/svg/rus.svg" alt="">
+                            <span>Русский</span>
+                        </div>
+                        <div class="lang-option">
+                            <img src="img/svg/eng.svg" alt="">
+                            <span>English</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ======= Hero ======= -->
+<section class="career-hero-bg hero-section">
+    <div class="hero-banner-background">
+        <div class="hero-content" data-aos-duration="1000">
+            <h1 class="here-main-wh-title" data-aos="fade-right">Mijozlar</h1>
+            <h4 class="lead sub-title" data-aos="fade-up">
+                Hisobchi — buxgalteriya hisobini yengillashtirish va tadbirkorlarni ortiqcha tashvishlardan ozod qilish
+                uchun yaratilgan kompaniya.
+                Biz mijozlarimizga moliyaviy hisob-kitob, soliq va tahlil ishlarini puxta yuritib, ularning biznesini
+                rivojlantirishga ko‘maklashamiz
+            </h4>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section">
+    <div class="container">
+        <div class="main-title mb-5">
+            <h2 class="display-6 mb-4" data-aos="fade-down">Biz bilan ishlash nimani beradi?</h2>
+            <div class="sub-title">
+                <p class="text-justify" data-aos="fade-right">
+                    Bizning jamoamiz — bir oiladek. Har bir xodim hurmat qilinadi, qo‘llab-quvvatlanadi va bir-birimiz
+                    uchun suyanch bo'lamiz. Biz birgalikda o‘samiz: bilmaganlar o‘rgatiladi, tajriba almashiladi va
+                    barcha xodimlarga teng munosabatda bo‘linadi. Yutuqlarimiz — jamoaviy o‘sish natijasi. Birgalikda
+                    kompaniyamizni rivojlantiramiz va katta marralarga erishamiz. Bizda rahbar va xodim o‘rtasidagi
+                    munosabat buyruq asosida emas, balki ustoz-shogird ruhida quriladi.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-light">
+    <div class="container text-center py-80">
+        <div class="main-title mb-3">
+            <h2 class="display-6 mb-2" data-aos="fade-up">Bizga xabar yuboring</h2>
+            <div class="sub-title">
+                <p>Bizning jamoamiz — bir oiladek. Har bir xodim hurmat qilinadi, qo‘llab-quvvatlanadi va bir-birimiz
+                    uchun suyanch bo'lamiz. Biz birgalikda o‘samiz: bilmaganlar o‘rgatiladi, tajriba almashiladi va
+                    barcha xodimlarga teng munosabatda bo‘linadi. Yutuqlarimiz — jamoaviy o‘sish natijasi. Birgalikda
+                    kompaniyamizni rivojlantiramiz va katta marralarga erishamiz.
+                    Bizda rahbar va xodim o‘rtasidagi munosabat buyruq asosida emas, balki ustoz-shogird ruhida
+                    quriladi.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between" data-aos="fade-up" data-aos-delay="100">
+            <div class="form-group">
+                <label for="fullName">F.I.SH.</label>
+                <input type="text" class="form-control form-control-lg" id="fullName"
+                       placeholder="Ma’lumot kiriting">
+            </div>
+            <div class="form-group">
+                <label for="emain">E-mail</label>
+                <input type="email" class="form-control form-control-lg" id="emain"
+                       placeholder="Ma’lumot kiriting">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon raqam</label>
+                <input type="text" class="form-control form-control-lg" id="phone"
+                       placeholder="Ma’lumot kiriting">
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-between mt-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="form-group w-100">
+                <label for="message">Xabar</label>
+                <textarea class="form-control form-control-lg" id="message" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-between mt-3" data-aos="fade-up">
+            <div class="w-100">
+                <button type="button" class="send-btn w-100">Jo’natish</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about-video-section">
+    <div class="container">
+
+        <p class="about-title-p" data-aos="fade-up">BIZ HAQIMIZDA <br>
+            KO’PROQ TUSHUNCHAGA EGA BO’LING
+        </p>
+        <p class="about-desc" data-aos="fade-down">Biz kelajak uchun mustaqil poydevor quramiz</p>
+
+        <div class="about-content">
+
+            <!-- Видео блок -->
+            <div class="about-video">
+                <div class="video-wrapper">
+                    <img src="img/column.png" alt="video" class="video-image">
+                    <div class="play-btn">&#9658;</div>
+                </div>
+            </div>
+
+            <!-- Текстовый блок -->
+            <div class="about-features">
+
+                <div class="feature-item" data-aos="fade-left">
+                    <img src="img/svg/icn-settings.svg" class="feature-icon" alt="">
+                    <div class="feature-text">
+                        <h5>Biz bilan quvnoq jamoaga ega bo’lasiz</h5>
+                        <h6>Bizning jamoa 20 nafar xodimdan iborat</h6>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-aos="fade-left">
+                    <img src="img/svg/vector.svg" class="feature-icon" alt="">
+                    <div class="feature-text">
+                        <h5>Biz bilan tez muvaffaqiyatga erishasiz</h5>
+                        <h6>Bizda o’zini o’zi rivojlantirish protsessi tezlik <br>
+                            bilan amalga oshadi</h6>
+                    </div>
+                </div>
+
+                <div class="feature-item" data-aos="fade-left">
+                    <img src="img/svg/mountain-peak.svg" class="feature-icon" alt="">
+                    <div class="feature-text">
+                        <h5>Biz bilan yuqori cho’qqilarga chiqasiz</h5>
+                        <h6>Bizning jamoada bo’lib, karyerangizda <br> yuqori cho’qqilarga erishishingiz mumkin</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======= Footer ======= -->
+<footer id="contacts" class="py-4 text-center">
+    <div class="container">
+        <div class="d-flex gap-5">
+            <div>
+                <h5 class="mb-3">Kompaniya haqida</h5>
+                <ul class="list-unstyled">
+                    <li>Kompaniya haqida</li>
+                    <li>Rahbariyat</li>
+                    <li>Raqamlarda</li>
+                    <li>Afzalliklarimiz</li>
+                    <li>Missiya va maqsadimiz</li>
+                    <li>Bizning yo‘limiz</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="mb-3">Xizmatlar</h5>
+                <ul class="list-unstyled">
+                    <li>Yangi korxona ochish</li>
+                    <li>Korxona buxgalteriyasini yuritish</li>
+                    <li>Buxgalteriyani qayta tiklash</li>
+                    <li>Buxgalteriyani qo‘llab-quvvatlash</li>
+                    <li>Import/eksport bo‘yicha xizmatlar</li>
+                    <li>Hisobotlarni topshirish</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="mb-3">Foydali sahifalar</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">Karera</a></li>
+                    <li><a href="#" class="nav-link">Mijozlar</a></li>
+                    <li><a href="#" class="nav-link">Narxlar</a></li>
+                    <li><a href="#" class="nav-link">Biz xizmat ko'rsatgan sohalar</a></li>
+                    <li><a href="#" class="nav-link">Ko‘p so‘raladigan savollar</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="mb-3">Kontaktlar</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <img src="img/svg/bx_bx-phone.svg" width="24" height="24" alt="phone">
+                        +998 9j9 830 02 05
+                    </li>
+                    <li>
+                        <img src="img/svg/at.svg" width="24" height="24" alt="phone">
+                        nuritdinovich@mail.ru
+                    </li>
+                    <li>
+                        <img src="img/svg/tg.svg" width="24" height="24" alt="phone">
+                        hisobchiltd
+                    </li>
+                    <li>
+                        <img src="img/svg/insta.svg" width="24" height="24" alt="phone">
+                        hisobchi_uz
+                    </li>
+                    <li>
+                        <img src="img/svg/location.svg" width="24" height="24" alt="phone" class="mr-2">
+                        Toshkent shahar, Qoratosh ko‘chasi, 8
+                    </li>
+                    <li>
+                        <img src="img/svg/location.svg" width="24" height="24" alt="phone" class="mr-2">
+                        Ish vaqti: 9:00 – 18:00 (Du–Ju)
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    AOS.init({
+        once: true,
+        offset: 100,
+        duration: 800
+    });
+
+    /* ---------------- Testimonials ---------------- */
+
+    const cards = document.querySelectorAll(".testimonial-card");
+    let index = 0;
+
+    function showSlide(newIndex) {
+        cards[index].classList.remove("active");
+        index = newIndex;
+        cards[index].classList.add("active");
+    }
+
+    const leftBtn = document.querySelector(".test-nav.left");
+    const rightBtn = document.querySelector(".test-nav.right");
+
+    if (leftBtn) {
+        leftBtn.addEventListener("click", () => {
+            showSlide((index - 1 + cards.length) % cards.length);
+        });
+    }
+
+    if (rightBtn) {
+        rightBtn.addEventListener("click", () => {
+            showSlide((index + 1) % cards.length);
+        });
+    }
+
+    /* ---------------- Language Dropdown ---------------- */
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const dropdown = document.querySelector(".language-dropdown");
+        const toggle = document.querySelector(".lang-toggle");
+        const menu = document.querySelector(".lang-menu");
+
+        if (!dropdown || !toggle || !menu) return;
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.style.display =
+                menu.style.display === "block" ? "none" : "block";
+        });
+
+        document.addEventListener("click", () => {
+            menu.style.display = "none";
+        });
+
+    });
+
+</script>
+</body>
+</html>

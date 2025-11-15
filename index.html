@@ -22,11 +22,29 @@
         <a class="navbar-brand fw-bold text-uppercase" href="#">
             <img src="img/logo.svg" class="big-svg" alt="Logo"/>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="mobile-lang">
+            <div class="lang-toggle">
+                <img src="img/svg/uzb.svg" class="lang-flag" alt="">
+                <span>O‘z</span>
+            </div>
+
+            <div class="lang-menu">
+                <div class="lang-option">
+                    <img src="img/svg/rus.svg" alt="">
+                    <span>Русский</span>
+                </div>
+                <div class="lang-option">
+                    <img src="img/svg/eng.svg" alt="">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <img src="img/svg/icn-menu.svg" class="plus-svg" alt="plus icon"/>
+        </div>
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav align-items-center">
                 <li class="nav-item"><a class="nav-link active" href="#home">Kompaniya haqida</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">Xizmatlar</a></li>
                 <li class="nav-item"><a class="nav-link" href="#products">Narxlar</a></li>
@@ -34,6 +52,23 @@
                 <li class="nav-item"><a class="nav-link" href="#contacts">Mijozlar</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacts">Karera</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacts">Kontaktlar</a></li>
+                <li class="nav-item dropdown language-dropdown">
+                    <div class="lang-toggle">
+                        <img src="img/svg/uzb.svg" class="lang-flag" alt="">
+                        <span>O‘z</span>
+                    </div>
+
+                    <div class="lang-menu">
+                        <div class="lang-option">
+                            <img src="img/svg/rus.svg" alt="">
+                            <span>Русский</span>
+                        </div>
+                        <div class="lang-option">
+                            <img src="img/svg/eng.svg" alt="">
+                            <span>English</span>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -58,49 +93,33 @@
 <!-- ======= Преимущества ======= -->
 <section class="advantages-section bg-white shadow-sm">
     <div class="container p-3">
-        <div class="row g-2">
+        <div class="row g-2 mobile-st">
             <div class="col-md-4">
                 <div class="border-right-short text-center p-3 h-100">
                     <div class="d-flex flex-row justify-content-between align-items-center mb-1 gap-2">
-                        <div class="w-25 service-img">
-                            <img src="img/svg/service-1.svg" width="48" alt="service-1">
-                        </div>
-                        <div class="w-75 text-left">
-                            <h5 class="service-title">Bozordagi faoliyat</h5>
-                        </div>
+                        <div class="w-25 service-img"><img src="img/svg/service-1.svg" width="48" alt="service-1"></div>
+                        <div class="w-75 text-left"><h5 class="service-title">Bozordagi <br> faoliyat</h5></div>
                     </div>
-                    <div class="w-100">
-                        <p class="service-text">Biz ushbu yo’nalish bo’yicha 9+ yil bozorda faoliyat yuritamiz</p>
-                    </div>
+                    <div class="w-100"><p class="service-text">Biz ushbu yo’nalish bo’yicha 9+ yil bozorda faoliyat
+                        yuritamiz</p></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="border-right-short text-center p-3 h-100">
                     <div class="d-flex flex-row justify-content-between align-items-center mb-1 gap-2">
-                        <div class="w-25 service-img">
-                            <img src="img/svg/service-2.svg" width="48" alt="service-2">
-                        </div>
-                        <div class="w-75 text-left">
-                            <h5 class="service-title w-75">Ko’plab mijozlar</h5>
-                        </div>
+                        <div class="w-25 service-img"><img src="img/svg/service-2.svg" width="48" alt="service-2"></div>
+                        <div class="w-75 text-left"><h5 class="service-title w-75">Ko’plab <br> mijozlar</h5></div>
                     </div>
-                    <div class="w-100">
-                        <p class="service-text w-75">Biz 90+ mijoz abonentlik xizmatidamiz</p>
-                    </div>
+                    <div class="w-100"><p class="service-text w-75">Biz 90+ mijoz abonentlik xizmatidamiz</p></div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="border-0 text-center p-3 h-100">
                     <div class="d-flex flex-row justify-content-between align-items-center mb-1 gap-2">
-                        <div class="w-25 service-img">
-                            <img src="img/svg/service-3.svg" width="48" alt="service-3">
-                        </div>
-                        <div class="w-75 text-left">
-                            <h5 class="service-title w-75">Bajarilgan ishlar</h5>
-                        </div>
+                        <div class="w-25 service-img"><img src="img/svg/service-3.svg" width="48" alt="service-3"></div>
+                        <div class="w-75 text-left"><h5 class="service-title w-75">Bajarilgan <br> ishlar</h5></div>
                     </div>
-                    <div class="w-100">
-                        <p class="service-text w-75">Biz 13 000+ vazifa va topshiriqlar bajardik</p>
+                    <div class="w-100"><p class="service-text w-75">Biz 13 000+ vazifa va topshiriqlar bajardik</p>
                     </div>
                 </div>
             </div>
@@ -220,7 +239,7 @@
             <div class="col-md-6">
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-right">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-2">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/flag-1.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -238,7 +257,7 @@
                 </div>
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-right">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-4">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/1C_Company.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -258,7 +277,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-right">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-4">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/digital-key.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -278,7 +297,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-right">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-4">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/rent.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -298,7 +317,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-right">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-3">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/task-checklist.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -318,7 +337,7 @@
             <div class="col-md-6">
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-left">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-2">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/people-line.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -337,7 +356,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-left">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-4">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/group-arrows.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -361,7 +380,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-left">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-4">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/fraud-prevention.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -380,7 +399,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-left">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-4">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/contract.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -399,7 +418,7 @@
 
                 <div class="d-flex flex-row justify-content-between align-items-center work-item gap-4 my-5"
                      data-aos="fade-left">
-                    <div class="d-flex flex-column flex-nowrap justify-content-between gap-3">
+                    <div class="icon-num">
                         <div>
                             <img src="img/svg/user-hard-work.svg" width="48" height="48" alt="flag-1">
                         </div>
@@ -682,6 +701,27 @@
             navbar.classList.remove("scrolled");
         }
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const dropdown = document.querySelector(".language-dropdown");
+        const toggle = document.querySelector(".lang-toggle");
+        const menu = document.querySelector(".lang-menu");
+
+        if (!dropdown || !toggle || !menu) return;
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.style.display =
+                menu.style.display === "block" ? "none" : "block";
+        });
+
+        document.addEventListener("click", () => {
+            menu.style.display = "none";
+        });
+
+    });
+
 </script>
 </body>
 </html>
