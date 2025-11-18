@@ -110,14 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     nav.addEventListener("show.bs.collapse", () => {
         toggler.classList.add("opened");
-        icon.src = "img/svg/up-circle.svg";     // ← твой крестик
+        icon.src = "img/svg/up-circle.svg";
         icon.style.width = "30px";
         icon.style.height = "30px";
     });
 
     nav.addEventListener("hide.bs.collapse", () => {
         toggler.classList.remove("opened");
-        icon.src = "img/svg/icn-menu.svg";  // ← меню обратно
+        icon.src = "img/svg/icn-menu.svg";
     });
 });
 
@@ -138,7 +138,7 @@ document.querySelectorAll('.service-block').forEach(block => {
             content.classList.remove('preview');
 
             setTimeout(() => {
-                content.style.maxHeight = "1000px"; // фиксируем для дальнейшей прокрутки
+                content.style.maxHeight = "1000px";
             }, 300);
         }
 
